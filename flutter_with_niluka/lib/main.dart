@@ -7,8 +7,15 @@ class HelloWorld extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    return const MaterialApp(
-      home: Text("Hello World!"),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Scaffold Title", style: TextStyle(fontSize:30.9),)
+        ),
+        body: const Center(
+          child: Text("Scaffold Body")
+        ),
+      ),
     );
   }
 }
